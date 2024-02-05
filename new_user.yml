@@ -1,0 +1,6 @@
+
+- name: 신규 AD 계정 생성
+  community.windows.win_domain_user:
+    name: test01
+    password: Nexon1994!
+    state: present

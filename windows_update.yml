@@ -1,8 +1,6 @@
 ---
 
 - hosts: DC1
-  become: yes
-  become_user: ops-admin@test.com
   tasks:
     - name: Windows Update
       win_updates:

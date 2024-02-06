@@ -10,5 +10,5 @@
           - UpdateRollups
   become: true
   become_method: runas
-  reboot: {{ isreboot }}
-  reboot_timeout: {{ timeout }}
+  reboot: "{{ isreboot }}"
+  reboot_timeout: "{{ timeout }}"

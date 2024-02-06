@@ -1,0 +1,6 @@
+---
+
+- hosts: DC1
+  tasks:
+    - name: new ad ou
+      win_command: "powershell.exe -ExecutionPolicy Bypass -File C:\\Ansible\\ps1\\create_ou.ps1.ps1 {{ name }} {{ path }}"

@@ -2,7 +2,7 @@
 
 - hosts: DC1
   tasks:
-    - name: 윈도우 업데이트 시작
+    - name: Windows Update
       win_updates:
         category_names:
           - SecurityUpdates

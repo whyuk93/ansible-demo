@@ -11,4 +11,3 @@
         reboot: "{{ isreboot }}"
         reboot_timeout: "{{ timeout }}"
       become: true
-      become_method: runas

@@ -8,7 +8,7 @@
           - SecurityUpdates
           - CriticalUpdates
           - UpdateRollups
-  become: true
-  become_method: runas
-  reboot: "{{ isreboot }}"
-  reboot_timeout: "{{ timeout }}"
+      become: true
+      become_method: runas
+      reboot: "{{ isreboot }}"
+      reboot_timeout: "{{ timeout }}"

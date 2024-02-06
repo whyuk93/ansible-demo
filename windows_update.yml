@@ -10,4 +10,3 @@
           - UpdateRollups
         reboot: "{{ isreboot }}"
         reboot_timeout: "{{ timeout }}"
-      become: true

@@ -1,0 +1,14 @@
+---
+
+- hosts: DC1
+  tasks:
+    - name: SU, CU, UR 업데이트 진행
+      win_updates:
+        category_names:
+          - SecurityUpdates
+          - CriticalUpdates
+          - UpdateRollups
+  become: true
+  become_method: runas
+  reboot: {{ isreboot }}
+  reboot_timeout: {{ timeout }}

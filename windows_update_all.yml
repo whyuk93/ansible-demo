@@ -1,0 +1,9 @@
+---
+
+- hosts: DC1
+  tasks:
+    - name: Windows Update All
+      win_updates:
+        category_names: '*'
+        reboot: "{{ isreboot }}"
+        reboot_timeout: "{{ timeout }}"

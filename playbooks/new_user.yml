@@ -1,0 +1,6 @@
+---
+
+- hosts: DC1
+  tasks:
+    - name: new ad user
+      win_command: "powershell.exe -ExecutionPolicy Bypass -File C:\\Ansible\\ps1\\new_user.ps1 {{ name }} {{ path }}"

@@ -1,0 +1,9 @@
+---
+
+- hosts: DC1
+  tasks:
+    - name: change password ad user
+      win_user:
+        name: "{{ name }}"
+        password: "{{ password }}"
+        state: present
